@@ -1,0 +1,50 @@
+﻿<Window x:Class="jegyre.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jegyre"
+        mc:Ignorable="d"
+        Title="Doga" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Kolbász" Margin="10,0,0,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Paprika" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Sajt" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <Button Grid.Row="2" Grid.Column="1" Width="400"/>
+
+        <Border Grid.Row="2" Grid.Column="3" CornerRadius="20" Width="150" Height="80" Background="LightBlue">
+            <TextBlock  Text="Trabant" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+        
+        
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
+            <TextBlock Text="fehér"/>
+            <TextBlock Text="sárga"/>
+            <TextBlock Text="piros"/>
+            <TextBlock Text="kolbász"/>
+        </StackPanel>
+    
+        <StackPanel Grid.Row="1" Grid.RowSpan="3">
+            <TextBlock Text="alma"/>
+            <TextBlock Text="körte"/>
+            <TextBlock Text="banán"/>
+            <TextBlock Text="paradicsom"/>
+        </StackPanel>
+    </Grid>
+</Window>
